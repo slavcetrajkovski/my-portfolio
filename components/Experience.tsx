@@ -1,0 +1,76 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+import { useTranslations } from "next-intl";
+
+export default function Experience() {
+    const t = useTranslations("experience");
+    const containerRef = useRef<HTMLDivElement>(null);
+    const jobs = ["job1", "job2", "job3"] as const;
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const items = gsap.utils.toArray<HTMLElement>(".experience-item");
+
+            items.forEach((item) => {
+                gsap.fromTo(
+                    item,
+                    {
+                        opacity: 0,
+                        y: 50,
+                    },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 85%",
+                            toggleActions: "play none none reverse",
+                        },
+                    }
+                );
+            });
+        }, containerRef);
+
+        return () => ctx.revert();
+    }, []);
+
+    return (
+        <section id="experience" ref={containerRef} className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold mb-16 tracking-tight">{t("title")}</h2>
+
+            <div className="space-y-12 md:space-y-24">
+                {jobs.map((job, index) => (
+                    <div
+                        key={index}
+                        className="experience-item group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 border-t border-border/20 pt-8"
+                    >
+                        <div className="md:col-span-3 text-lg md:text-xl text-muted-foreground font-light">
+                            {t(`jobs.${job}.period`)}
+                        </div>
+                        <div className="md:col-span-9">
+                            <h3 className="text-2xl md:text-4xl font-bold mb-2 group-hover:text-primary/80 transition-colors duration-300">
+                                {t(`jobs.${job}.role`)}
+                            </h3>
+                            <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+                                {t(`jobs.${job}.company`)}
+                            </p>
+                            <p className="text-base md:text-lg text-muted-foreground/80 max-w-2xl">
+                                {t(`jobs.${job}.description`)}
+                            </p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+}

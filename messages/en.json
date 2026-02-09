@@ -1,0 +1,80 @@
+{
+    "navbar": {
+        "about": "About",
+        "experience": "Experience",
+        "work": "Work",
+        "skills": "Skills"
+    },
+    "hero": {
+        "titleLine1": "SLAVKO",
+        "titleLine2": "TRAJKOVSKI",
+        "subtitle": "Frontend Engineer & UI/UX Designer",
+        "description": "Crafting digital experiences that merge functionality with artistic vision."
+    },
+    "experience": {
+        "title": "EXPERIENCE",
+        "jobs": {
+            "job1": {
+                "company": "Tech Solutions Inc.",
+                "role": "Senior Frontend Engineer",
+                "period": "2023 - Present",
+                "description": "Leading the frontend team in building scalable SaaS applications using Next.js and React."
+            },
+            "job2": {
+                "company": "Digital Creative Agency",
+                "role": "UI Developer",
+                "period": "2021 - 2023",
+                "description": "Collaborated with designers to implement award-winning interactive websites for global brands."
+            },
+            "job3": {
+                "company": "StartUp Hub",
+                "role": "Frontend Developer",
+                "period": "2019 - 2021",
+                "description": "Developed MVP features and optimized performance for high-growth startups."
+            }
+        }
+    },
+    "projects": {
+        "title": "SELECTED WORK",
+        "period": "2023 - 2026",
+        "viewProject": "VIEW PROJECT",
+        "items": {
+            "project1": {
+                "title": "E-Commerce Redesign",
+                "category": "Web Development"
+            },
+            "project2": {
+                "title": "Financial Dashboard",
+                "category": "App Interface"
+            },
+            "project3": {
+                "title": "Creative Portfolio",
+                "category": "Design & Dev"
+            },
+            "project4": {
+                "title": "Eco-Friendly Platform",
+                "category": "Sustainability"
+            }
+        }
+    },
+    "skills": {
+        "titleLine1": "TECHNICAL",
+        "titleLine2": "EXPERTISE",
+        "description": "A comprehensive toolset developed over years of building production-ready applications. Always learning, always evolving.",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "design": "Design",
+            "tools": "Tools"
+        }
+    },
+    "footer": {
+        "title": "LET'S WORK TOGETHER",
+        "emailLabel": "Drop me a line",
+        "socialsLabel": "Connect"
+    },
+    "metadata": {
+        "title": "Slavko Trajkovski - Portfolio",
+        "description": "Bold, minimalistic portfolio of a senior frontend engineer."
+    }
+}

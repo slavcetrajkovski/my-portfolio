@@ -1,0 +1,80 @@
+{
+    "navbar": {
+        "about": "За Мене",
+        "experience": "Искуство",
+        "work": "Проекти",
+        "skills": "Вештини"
+    },
+    "hero": {
+        "titleLine1": "СЛАВКО",
+        "titleLine2": "ТРАЈКОВСКИ",
+        "subtitle": "Frontend Инженер & UI/UX Дизајнер",
+        "description": "Креирање на дигитални искуства кои ја спојуваат функционалноста со уметничката визија."
+    },
+    "experience": {
+        "title": "ИСКУСТВО",
+        "jobs": {
+            "job1": {
+                "company": "Tech Solutions Inc.",
+                "role": "Сениор Frontend Инженер",
+                "period": "2023 - Денес",
+                "description": "Водење на frontend тимот во изградба на скалабилни SaaS апликации користејќи Next.js и React."
+            },
+            "job2": {
+                "company": "Digital Creative Agency",
+                "role": "UI Развивач",
+                "period": "2021 - 2023",
+                "description": "Соработка со дизајнери за имплементација на интерактивни веб-сајтови за глобални брендови."
+            },
+            "job3": {
+                "company": "StartUp Hub",
+                "role": "Frontend Развивач",
+                "period": "2019 - 2021",
+                "description": "Развој на MVP функционалности и оптимизација на перформанси за брзорастечки стартапи."
+            }
+        }
+    },
+    "projects": {
+        "title": "ИЗБРАНИ ПРОЕКТИ",
+        "period": "2023 - 2026",
+        "viewProject": "ВИДИ ПРОЕКТ",
+        "items": {
+            "project1": {
+                "title": "E-Commerce Редизајн",
+                "category": "Веб Развој"
+            },
+            "project2": {
+                "title": "Финансиски Табли",
+                "category": "Апликациски Интерфејс"
+            },
+            "project3": {
+                "title": "Креативно Портфолио",
+                "category": "Дизајн и Развој"
+            },
+            "project4": {
+                "title": "Еко-Платформа",
+                "category": "Одржливост"
+            }
+        }
+    },
+    "skills": {
+        "titleLine1": "ТЕХНИЧКА",
+        "titleLine2": "ЕКСПЕРТИЗА",
+        "description": "Сеопфатен сет на алатки развиен низ годините на градење апликации подготвени за продукција. Секогаш учам, секогаш еволуирам.",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "design": "Дизајн",
+            "tools": "Алатки"
+        }
+    },
+    "footer": {
+        "title": "АЈДЕ ДА СОРАБОТУВАМЕ",
+        "emailLabel": "Пишете ми",
+        "socialsLabel": "Поврзи се"
+    },
+    "metadata": {
+        "title": "Славко Трајковски - Портфолио",
+        "description": "Болдирано, минималистичко портфолио на сениор frontend инженер."
+    }
+}
