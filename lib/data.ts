@@ -23,12 +23,11 @@ export const skillsData = [
             "Firebase",
             "Supabase",
             "Prisma",
-            "GraphQL",
         ],
     },
     {
         category: "Tools",
-        items: ["Git", "Docker", "AWS", "Vercel"],
+        items: ["Git", "Docker", "AWS", "Vercel", "Railway"],
     },
 ];
 

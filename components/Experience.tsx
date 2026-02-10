@@ -81,9 +81,11 @@ export default function Experience() {
                                     {t(`jobs.${job}.company`)}
                                 </p>
                             </div>
-                            <p className="text-base md:text-lg text-muted-foreground/80 max-w-2xl">
-                                {t(`jobs.${job}.description`)}
-                            </p>
+                            <ul className="list-disc pl-5 space-y-2 text-base md:text-lg text-muted-foreground/80 max-w-2xl">
+                                {(t.raw(`jobs.${job}.points`) as string[]).map((point, i) => (
+                                    <li key={i}>{point}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 ))}

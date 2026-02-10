@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -66,7 +68,7 @@ export default function Hero() {
         <section
             id="hero"
             ref={containerRef}
-            className="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 md:px-20 max-w-7xl mx-auto pt-24 md:pt-0"
+            className="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center px-6 md:px-20 max-w-7xl mx-auto pt-24 md:pt-0"
         >
             <div className="flex flex-col justify-center z-10">
                 <h1
@@ -104,17 +106,14 @@ export default function Hero() {
                     </svg>
                 </div>
 
-                <div className="relative w-full h-full border border-border/20 rounded-[2rem] overflow-hidden bg-background/30 backdrop-blur-sm shadow-2xl">
-                    <div className="absolute inset-2 border border-border/10 rounded-[1.5rem]" />
-
-                    <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
-                        <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-2xl">
-                            ✨
-                        </div>
-                        <p className="text-sm font-medium tracking-[0.2em] text-muted-foreground uppercase">
-                            Interactive Space
-                        </p>
-                    </div>
+                <div className="relative w-full h-full border-2 border-primary/20 rounded-[2rem] overflow-hidden shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500">
+                    <Image
+                        src="/me.jpeg"
+                        alt="Slavko Trajkovski"
+                        fill
+                        className="object-cover scale-110"
+                        priority
+                    />
                 </div>
             </div>
         </section>
