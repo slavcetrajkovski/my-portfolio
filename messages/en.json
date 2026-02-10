@@ -8,35 +8,46 @@
     "hero": {
         "titleLine1": "SLAVKO",
         "titleLine2": "TRAJKOVSKI",
-        "subtitle": "Frontend Engineer & UI/UX Designer",
+        "subtitle": "Software Engineer",
         "description": "Crafting digital experiences that merge functionality with artistic vision."
     },
     "experience": {
         "title": "EXPERIENCE",
         "jobs": {
             "job1": {
-                "company": "Tech Solutions Inc.",
-                "role": "Senior Frontend Engineer",
-                "period": "2023 - Present",
-                "description": "Leading the frontend team in building scalable SaaS applications using Next.js and React."
+                "company": "VASS",
+                "role": "Software Engineer",
+                "period": "Oct 2025 - Present",
+                "description": "Part of the team developing secure enterprise solutions for NATO using Vanilla JS and Adobe Experience Manager."
             },
             "job2": {
-                "company": "Digital Creative Agency",
-                "role": "UI Developer",
-                "period": "2021 - 2023",
-                "description": "Collaborated with designers to implement award-winning interactive websites for global brands."
+                "company": "Freelance",
+                "role": "Software Engineer",
+                "period": "2023 - Present",
+                "description": "Building full-stack web and mobile applications and digital solutions for international clients."
             },
             "job3": {
-                "company": "StartUp Hub",
-                "role": "Frontend Developer",
-                "period": "2019 - 2021",
-                "description": "Developed MVP features and optimized performance for high-growth startups."
+                "company": "VASS",
+                "role": "Frontend Engineer",
+                "period": "Jul 2025 - Sep 2025",
+                "description": "Started as an intern contributing to internal tools and component libraries, improving development efficiency."
+            },
+            "job4": {
+                "company": "G+D Netcetera",
+                "role": "Software Engineer",
+                "period": "Apr 2024 - Jun 2024",
+                "description": "Joined as an intern to develop a centralized image gallery for Baloise using Svelte, TypeScript, and Spring Boot."
             }
         }
     },
+    "education": {
+        "title": "EDUCATION",
+        "school": "Faculty of Computer Science and Engineering - Skopje",
+        "degree": "Bachelor of Science in Software Engineering and Information Technologies",
+        "period": "2021 - 2025"
+    },
     "projects": {
         "title": "SELECTED WORK",
-        "period": "2023 - 2026",
         "viewProject": "VIEW PROJECT",
         "items": {
             "project1": {

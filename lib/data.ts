@@ -15,8 +15,10 @@ export const skillsData = [
     {
         category: "Backend",
         items: [
+            "Spring Boot",
+            "Java",
+            "Payload CMS",
             "Node.js",
-            "Express",
             "PostgreSQL",
             "Firebase",
             "Supabase",
@@ -25,18 +27,8 @@ export const skillsData = [
         ],
     },
     {
-        category: "Design",
-        items: [
-            "Figma",
-            "Adobe XD",
-            "Photoshop",
-            "Illustrator",
-            "UI/UX Principles",
-            "Wireframing",
-        ],
-    },
-    {
         category: "Tools",
-        items: ["Git", "Docker", "AWS", "Vercel", "Jest", "Cypress", "Webpack"],
+        items: ["Git", "Docker", "AWS", "Vercel"],
     },
 ];
+

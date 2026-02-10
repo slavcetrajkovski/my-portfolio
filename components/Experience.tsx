@@ -13,7 +13,13 @@ import { useTranslations } from "next-intl";
 export default function Experience() {
     const t = useTranslations("experience");
     const containerRef = useRef<HTMLDivElement>(null);
-    const jobs = ["job1", "job2", "job3"] as const;
+    const jobs = ["job1", "job2", "job3", "job4"] as const;
+
+    const jobLogos: Record<string, string> = {
+        job1: "/vass_logo.jpeg",
+        job3: "/vass_logo.jpeg",
+        job4: "/g_d_netcetera_logo.jpeg",
+    };
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -61,9 +67,20 @@ export default function Experience() {
                             <h3 className="text-2xl md:text-4xl font-bold mb-2 group-hover:text-primary/80 transition-colors duration-300">
                                 {t(`jobs.${job}.role`)}
                             </h3>
-                            <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-                                {t(`jobs.${job}.company`)}
-                            </p>
+                            <div className="flex items-center gap-4 mb-4">
+                                {jobLogos[job] && (
+                                    <div className="relative w-12 h-12 rounded-full overflow-hidden border border-border/10 shadow-sm flex-shrink-0">
+                                        <img
+                                            src={jobLogos[job]}
+                                            alt={`${t(`jobs.${job}.company`)} logo`}
+                                            className="object-cover w-full h-full"
+                                        />
+                                    </div>
+                                )}
+                                <p className="text-xl md:text-2xl text-muted-foreground">
+                                    {t(`jobs.${job}.company`)}
+                                </p>
+                            </div>
                             <p className="text-base md:text-lg text-muted-foreground/80 max-w-2xl">
                                 {t(`jobs.${job}.description`)}
                             </p>

@@ -54,7 +54,6 @@ export default function Projects() {
         <section id="work" ref={containerRef} className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
             <div className="flex justify-between items-end mb-16">
                 <h2 className="text-4xl md:text-6xl font-bold tracking-tight">{t("title")}</h2>
-                <span className="text-muted-foreground hidden md:block">{t("period")}</span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
@@ -65,7 +64,6 @@ export default function Projects() {
                     >
                         <div className="aspect-[4/3] bg-neutral-900 mb-6 overflow-hidden relative">
                             <div className="absolute inset-0 bg-neutral-800 transition-transform duration-700 group-hover:scale-105 origin-center" />
-                            {/* Placeholder overlay */}
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/40">
                                 <span className="text-white text-lg font-medium tracking-widest border border-white/30 px-6 py-2 rounded-full">{t("viewProject")}</span>
                             </div>

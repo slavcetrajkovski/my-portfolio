@@ -90,7 +90,6 @@ export default function Hero() {
                 ref={imageRef}
                 className="relative w-full aspect-square max-w-md mx-auto lg:mx-0 lg:ml-auto opacity-0"
             >
-                {/* Abstract Curvy Lines Graphic - Background */}
                 <div className="absolute -inset-10 opacity-20">
                     <svg
                         viewBox="0 0 200 200"
@@ -105,12 +104,9 @@ export default function Hero() {
                     </svg>
                 </div>
 
-                {/* The Graphic Slot Container */}
                 <div className="relative w-full h-full border border-border/20 rounded-[2rem] overflow-hidden bg-background/30 backdrop-blur-sm shadow-2xl">
-                    {/* Inner frame decoration */}
                     <div className="absolute inset-2 border border-border/10 rounded-[1.5rem]" />
 
-                    {/* Placeholder Content */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
                         <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-2xl">
                             ✨
