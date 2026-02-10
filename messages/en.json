@@ -52,7 +52,7 @@
                 "role": "Software Engineer",
                 "period": "Apr 2024 - Jun 2024",
                 "points": [
-                    "Developed a centralized image gallery for Baloise",
+                    "Part of the team that developed a solution for Baloise",
                     "Contributed to the development of a large-scale learning ecosystem for a major client",
                     "Implemented a centralized image gallery for managing and associating media assets",
                     "Developed full-stack features using Svelte (TypeScript) and Spring Boot",
@@ -72,20 +72,28 @@
         "viewProject": "VIEW PROJECT",
         "items": {
             "project1": {
-                "title": "E-Commerce Redesign",
-                "category": "Web Development"
+                "title": "Funkogram",
+                "category": "E-commerce Platform"
             },
             "project2": {
-                "title": "Financial Dashboard",
-                "category": "App Interface"
+                "title": "Lajka Mobile App",
+                "category": "Animal Welfare & AI Adoption Platform"
             },
             "project3": {
-                "title": "Creative Portfolio",
-                "category": "Design & Dev"
+                "title": "Konstruktor",
+                "category": "Construction Management"
             },
             "project4": {
-                "title": "Eco-Friendly Platform",
-                "category": "Sustainability"
+                "title": "eCode",
+                "category": "Learning Management System"
+            },
+            "project5": {
+                "title": "Rozmith",
+                "category": "Cybersecurity SaaS"
+            },
+            "project6": {
+                "title": "Kickoff",
+                "category": "Open Source Boilerplate"
             }
         }
     },

@@ -54,14 +54,14 @@ export default function Navbar() {
                 <div className="flex items-center gap-8">
                     <div className="hidden md:flex gap-8">
                         {navLinks.map((link) => (
-                            <a
+                            <Link
                                 key={link.name}
                                 href={link.href}
                                 onClick={(e) => handleScrollTo(e, link.href)}
                                 className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest text-muted-foreground hover:text-foreground"
                             >
                                 {link.name}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 

@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,12 +15,21 @@ import { useTranslations } from "next-intl";
 export default function Projects() {
     const t = useTranslations("projects");
     const containerRef = useRef<HTMLDivElement>(null);
-    const projects = [
-        { key: "project1", tech: "Next.js, Shopify, Tailwind" },
-        { key: "project2", tech: "React, D3.js, Node.js" },
-        { key: "project3", tech: "Three.js, GSAP, WebGL" },
-        { key: "project4", tech: "Vue.js, AWS, Serverless" }
-    ] as const;
+    type Project = {
+        key: string;
+        tech: string;
+        link: string;
+        image?: string;
+    };
+
+    const projects: Project[] = [
+        { key: "project1", tech: "Spring Boot, Next.js, PostgreSQL", link: "https://funkogram.mk", image: "/funkogram.png" },
+        { key: "project2", tech: "Node.js, React Native", link: "https://github.com/slavcetrajkovski/lajka-mobile-app" },
+        { key: "project3", tech: "Next.js, Prisma, Better-Auth", link: "https://konstruktor.mk", image: "/konstruktor.png" },
+        { key: "project4", tech: "Next.js, Prisma, Clerk", link: "https://ecode.mk", image: "/ecode.png" },
+        { key: "project5", tech: "Next.js, Umami, Resend", link: "https://rozmith.vercel.app", image: "/rozmith.png" },
+        { key: "project6", tech: "Next.js, Prisma, Better-Auth", link: "https://github.com/slavcetrajkovski/kickoff" }
+    ];
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -58,12 +68,24 @@ export default function Projects() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
                 {projects.map((project, index) => (
-                    <div
+                    <Link
+                        href={project.link}
+                        target="_blank"
                         key={index}
-                        className="project-card group cursor-pointer relative"
+                        className="project-card group cursor-pointer relative block"
                     >
                         <div className="aspect-[4/3] bg-neutral-900 mb-6 overflow-hidden relative">
-                            <div className="absolute inset-0 bg-neutral-800 transition-transform duration-700 group-hover:scale-105 origin-center" />
+                            {project.image ? (
+                                <Image
+                                    src={project.image}
+                                    alt={t(`items.${project.key}.title`)}
+                                    width={800}
+                                    height={600}
+                                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 origin-center"
+                                />
+                            ) : (
+                                <div className="absolute inset-0 bg-neutral-800 transition-transform duration-700 group-hover:scale-105 origin-center" />
+                            )}
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/40">
                                 <span className="text-white text-lg font-medium tracking-widest border border-white/30 px-6 py-2 rounded-full">{t("viewProject")}</span>
                             </div>
@@ -82,7 +104,7 @@ export default function Projects() {
                                 {project.tech}
                             </span>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>
