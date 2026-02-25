@@ -116,5 +116,8 @@
     "metadata": {
         "title": "Slavko Trajkovski - Portfolio",
         "description": "Bold, minimalistic portfolio of a senior frontend engineer."
+    },
+    "common": {
+        "contactMe": "LET'S TALK!"
     }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import CTAButton from "./CTAButton";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -82,9 +83,10 @@ export default function Hero() {
                     className="text-xl md:text-3xl text-muted-foreground font-light max-w-2xl opacity-0"
                 >
                     <span className="block mb-2">{t("subtitle")}</span>
-                    <span className="block text-base md:text-xl opacity-80">
+                    <span className="block text-base md:text-xl opacity-80 mb-8">
                         {t("description")}
                     </span>
+                    <CTAButton />
                 </div>
             </div>
 

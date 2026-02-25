@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
+import CTAButton from "./CTAButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,8 +27,7 @@ export default function Projects() {
         { key: "project1", tech: "Spring Boot, Next.js, PostgreSQL", link: "https://funkogram.mk", image: "/funkogram.png" },
         { key: "project3", tech: "Next.js, Prisma, Better-Auth", link: "https://konstruktor.mk", image: "/konstruktor.png" },
         { key: "project4", tech: "Next.js, Prisma, Clerk", link: "https://ecode.mk", image: "/ecode.png" },
-        { key: "project5", tech: "Next.js, Umami, Resend", link: "https://rozmith.vercel.app", image: "/rozmith.png" },
-        { key: "project6", tech: "Next.js, Prisma, Better-Auth", link: "https://github.com/slavcetrajkovski/kickoff" }
+        { key: "project5", tech: "Next.js, Umami, Resend", link: "https://rozmith.vercel.app", image: "/rozmith.png" }
     ];
 
     useEffect(() => {
@@ -105,6 +105,10 @@ export default function Projects() {
                         </div>
                     </Link>
                 ))}
+            </div>
+
+            <div className="flex justify-center mt-12 md:mt-16">
+                <CTAButton />
             </div>
         </section>
     );
