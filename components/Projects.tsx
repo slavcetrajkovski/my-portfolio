@@ -24,7 +24,6 @@ export default function Projects() {
 
     const projects: Project[] = [
         { key: "project1", tech: "Spring Boot, Next.js, PostgreSQL", link: "https://funkogram.mk", image: "/funkogram.png" },
-        { key: "project2", tech: "Node.js, React Native", link: "https://github.com/slavcetrajkovski/lajka-mobile-app" },
         { key: "project3", tech: "Next.js, Prisma, Better-Auth", link: "https://konstruktor.mk", image: "/konstruktor.png" },
         { key: "project4", tech: "Next.js, Prisma, Clerk", link: "https://ecode.mk", image: "/ecode.png" },
         { key: "project5", tech: "Next.js, Umami, Resend", link: "https://rozmith.vercel.app", image: "/rozmith.png" },

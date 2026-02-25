@@ -33,7 +33,7 @@
                 "period": "2023 - Present",
                 "points": [
                     "Building full-stack web and mobile applications and digital solutions for international clients.",
-                    "You can see examples of my work in the selected work section below."
+                    "You can see examples of my work in the client work section below."
                 ]
             },
             "job3": {
@@ -68,7 +68,7 @@
         "period": "2021 - 2025"
     },
     "projects": {
-        "title": "SELECTED WORK",
+        "title": "CLIENT WORK",
         "viewProject": "VIEW PROJECT",
         "items": {
             "project1": {
