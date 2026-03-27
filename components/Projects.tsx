@@ -9,8 +9,6 @@ import CTAButton from "./CTAButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 import { useTranslations } from "next-intl";
 
 export default function Projects() {
@@ -26,8 +24,8 @@ export default function Projects() {
     const projects: Project[] = [
         { key: "project1", tech: "Spring Boot, Next.js, PostgreSQL", link: "https://funkogram.mk", image: "/funkogram.png" },
         { key: "project3", tech: "Next.js, Prisma, Better-Auth", link: "https://konstruktor.mk", image: "/konstruktor.png" },
+        { key: "project5", tech: "Next.js, Umami, Resend", link: "https://rozmith.com", image: "/rozmith.png" },
         { key: "project4", tech: "Next.js, Prisma, Clerk", link: "https://ecode.mk", image: "/ecode.png" },
-        { key: "project5", tech: "Next.js, Umami, Resend", link: "https://rozmith.vercel.app", image: "/rozmith.png" }
     ];
 
     useEffect(() => {
